@@ -45,5 +45,11 @@
     - name: yay install packages
       become: no
       shell: yay -S --noconfirm --needed - < yay-package-list
+    - name: install oh my zh
+      become: no
+      shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    - name: make zsh shell default
+      become: no
+      shell: chsh -s /usr/bin/zsh
         
           
