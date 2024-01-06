@@ -51,5 +51,14 @@
     - name: make zsh shell default
       become: no
       shell: chsh -s /usr/bin/zsh
+    - name: git clone zsh-autosuggestions
+      git: 
+        repo: 'https://github.com/zsh-users/zsh-autosuggestions'
+        dest: /home/michael/.oh-my-zsh/custom/plugins
+        clone: yes
+    - name: enable btusb
+      shell: modprobe btusb
+    - name: start/enable bluetooth service
+      shell: systemctl enable --now bluetooth.service
         
           
