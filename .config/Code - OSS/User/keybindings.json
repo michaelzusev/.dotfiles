@@ -1,21 +1,6 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-    {
-        "key": "ctrl+alt+up",
-        "command": "workbench.action.moveEditorToAboveGroup"
-    },
-    {
-        "key": "ctrl+alt+down",
-        "command": "workbench.action.moveEditorToBelowGroup"
-    },
-    {
-        "key": "ctrl+alt+left",
-        "command": "workbench.action.moveEditorToLeftGroup"
-    },
-    {
-        "key": "ctrl+alt+right",
-        "command": "workbench.action.moveEditorToRightGroup"
-    },
+
     // Toggle between terminal and editor focus
     {
         "key":     "ctrl+`",
@@ -25,5 +10,62 @@
         "key":     "ctrl+`",
         "command": "workbench.action.focusActiveEditorGroup",
         "when":    "terminalFocus"
-    }
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "workbench.action.moveEditorToAboveGroup"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.moveEditorToLeftGroup"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.moveEditorToRightGroup"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "workbench.action.moveEditorToBelowGroup"
+    },
+    {
+        "key": "ctrl+k alt+left",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+left",
+        "command": "-workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+k alt+right",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+right",
+        "command": "-workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+k alt+up",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+up",
+        "command": "-workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+k alt+down",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+down",
+        "command": "-workbench.action.focusBelowGroup"
+    },
+    
 ]
